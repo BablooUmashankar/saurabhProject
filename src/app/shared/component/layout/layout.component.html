@@ -1,0 +1,14 @@
+<div class="page-wrapper">
+  <app-header></app-header>
+  <div class="page-body-wrapper">
+      <div class="page-sidebar" [class.open]="_collaspeService.openSiderbar">
+          <app-sidebar></app-sidebar> 
+          </div>     
+      <div class="page-body">
+          <app-breadcrum></app-breadcrum>
+          <router-outlet></router-outlet>
+      </div>
+      <app-footer></app-footer>
+  </div>
+</div>
+
